@@ -12,7 +12,7 @@ export const useMe = () => {
 
 export const usePlaylist = () => {
   const { data, error } = useSWR("/playlist", fetcher);
-  console.log(`Error is ${JSON.stringify(data)} and error is ${error}`);
+  console.log(`Data is ${JSON.stringify(data)} and error is ${error}`);
   return {
     playlists: (data as any) || [],
     isLoading: !data && !error,
