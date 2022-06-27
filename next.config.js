@@ -5,6 +5,9 @@ const nextConfig = {
     // WARNING! This is dangerous!
     ignoreBuildErrors: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
